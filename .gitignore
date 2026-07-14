@@ -1,0 +1,16 @@
+# build artifacts
+/sneakpack
+/dist/
+*.test
+
+# bundles and cursors produced while experimenting
+*.spk
+*.cursor
+
+# coverage
+coverage.out
+coverage.html
+
+# editor droppings
+*.swp
+.DS_Store

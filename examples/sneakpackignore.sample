@@ -1,0 +1,19 @@
+# Sample .sneakpackignore for a field-research tree.
+# Copy to the root of your source directory as ".sneakpackignore".
+# The file itself is tracked and synced, so both sides agree on the rules.
+
+# scratch and editor files, wherever they appear
+*.tmp
+*.swp
+
+# whole directories that never need to travel (note the trailing slash)
+cache/
+raw-video/
+
+# anchored: only the top-level scratch dir, not every "scratch" below
+/scratch/
+
+# equipment logs are huge and local...
+sensors/**/*.log
+# ...except the calibration log, which the base station needs
+!calibration.log
